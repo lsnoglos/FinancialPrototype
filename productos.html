@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Productos</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <span class="hamburger"><i class="fas fa-bars"></i></span>
+    <h1>Productos</h1>
+  </header>
+
+  <nav class="drawer">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home icon"></i>Inicio</a></li>
+      <li><a href="descargar.html"><i class="fas fa-download icon"></i>Descargar</a></li>
+      <li><a href="subir.html"><i class="fas fa-upload icon"></i>Subir</a></li>
+      <li><a href="clientes.html"><i class="fas fa-user icon"></i>Clientes</a></li>
+      <li><a href="productos.html" class="active"><i class="fas fa-box icon"></i>Productos</a></li>
+      <li><a href="impresiones.html"><i class="fas fa-print icon"></i>Impresiones</a></li>
+      <li><a href="mas.html"><i class="fas fa-ellipsis-h icon"></i>Más</a></li>
+      <li><a href="login.html" onclick="alert('Salir')"><i class="fas fa-sign-out-alt icon"></i>Salir</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="search-bar" style="margin: 16px;">
+      <input type="text" placeholder="Buscar por código, código de barra y descripción" />
+    </div>
+
+    <div class="card product-card">
+      <div class="product-icon">
+        <i class="fas fa-barcode"></i>
+      </div>
+      <div class="product-info">
+        <strong>BITT00001065</strong><br />
+        ITT00001065<br />
+        <span>desembolso cordoba</span><br />
+        <strong>Precio: C$1</strong>
+      </div>
+    </div>
+
+    <div class="fab"><i class="fas fa-plus"></i></div>
+  </main>
+
+  <div class="bottom-nav">
+    <a href="index.html"><i class="fas fa-home"></i><span>Inicio</span></a>
+    <a href="abono.html"><i class="fas fa-dollar-sign"></i><span>Abono</span></a>
+    <a href="factura.html"><i class="fas fa-file-invoice"></i><span>Factura</span></a>
+    <a href="parametros.html"><i class="fas fa-cog"></i><span>Parámetros</span></a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

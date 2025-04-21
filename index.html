@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <span class="hamburger"><i class="fas fa-bars"></i></span>
+    <h1>Inicio</h1>
+  </header>
+  <nav class="drawer">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home icon"></i>Inicio</a></li>
+      <li><a href="descargar.html"><i class="fas fa-download icon"></i>Descargar</a></li>
+      <li><a href="subir.html"><i class="fas fa-upload icon"></i>Subir</a></li>
+      <li><a href="clientes.html"><i class="fas fa-user icon"></i>Clientes</a></li>
+      <li><a href="productos.html"><i class="fas fa-box icon"></i>Productos</a></li>
+      <li><a href="impresiones.html"><i class="fas fa-print icon"></i>Impresiones</a></li>
+      <li><a href="mas.html"><i class="fas fa-ellipsis-h icon"></i>Más</a></li>
+      <li><a href="login.html" onclick="alert('Salir')"><i class="fas fa-sign-out-alt icon"></i>Salir</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="card">
+      <i class="fas fa-file-invoice-dollar" style="font-size:24px;color:#800000;"></i>
+      <h2>0</h2>
+      <p>Abonos Aplicados</p>
+      <p style="color:#800000;">Monto Córdobas: C$0.00</p>
+      <p style="color:#800000;">Monto Dólares: $0.00</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-file-invoice" style="font-size:24px;color:#b38b00;"></i>
+      <h2>0</h2>
+      <p>Facturas de Contado</p>
+      <p>Monto Córdobas: C$0.00</p>
+      <p>Monto Dólares: $0.00</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-hand-holding-usd" style="font-size:24px;color:#006400;"></i>
+      <h2>0</h2>
+      <p>Facturas de Crédito</p>
+      <p style="color:#006400;">Monto Córdobas: C$0.00</p>
+      <p style="color:#006400;">Monto Dólares: $0.00</p>
+    </div>
+    <div style="text-align:right;">
+      <strong>TOTAL: C$0.00</strong><br>
+      <strong>TOTAL: $0.00</strong>
+    </div>
+  </main>
+
+  <div class="bottom-nav">
+    <a href="index.html"><i class="fas fa-home"></i><span>Inicio</span></a>
+    <a href="abono.html"><i class="fas fa-dollar-sign"></i><span>Abono</span></a>
+    <a href="factura.html"><i class="fas fa-file-invoice"></i><span>Factura</span></a>
+    <a href="parametros.html"><i class="fas fa-cog"></i><span>Parámetros</span></a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

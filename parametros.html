@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parámetros</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <span class="hamburger"><i class="fas fa-bars"></i></span>
+    <h1>Parámetros</h1>
+  </header>
+
+  <nav class="drawer">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home icon"></i>Inicio</a></li>
+      <li><a href="descargar.html"><i class="fas fa-download icon"></i>Descargar</a></li>
+      <li><a href="subir.html"><i class="fas fa-upload icon"></i>Subir</a></li>
+      <li><a href="clientes.html"><i class="fas fa-user icon"></i>Clientes</a></li>
+      <li><a href="productos.html"><i class="fas fa-box icon"></i>Productos</a></li>
+      <li><a href="impresiones.html"><i class="fas fa-print icon"></i>Impresiones</a></li>
+      <li><a href="mas.html"><i class="fas fa-ellipsis-h icon"></i>Más</a></li>
+      <li><a href="login.html" onclick="alert('Salir')"><i class="fas fa-sign-out-alt icon"></i>Salir</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="card">
+      <h2>Configuraciones Generales</h2>
+      <label><input type="checkbox" /> Modo Offline</label><br />
+      <label>Servidor:
+        <input type="text" value="https://posme.net/v4posme/creditaguil/" />
+      </label><br />
+      <label>Frecuencia de Sincronización:
+        <select>
+          <option>Cada inicio</option>
+          <option>Cada 10 minutos</option>
+          <option>Manual</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="card">
+      <h2>Usuario</h2>
+      <label>Nombre de usuario:
+        <input type="text" value="usu2" />
+      </label><br />
+      <label><input type="checkbox" checked /> Recordar Usuario</label><br />
+      <button>🔐 Cambiar Contraseña</button>
+    </div>
+
+    <div class="card">
+      <h2>Facturación</h2>
+      <label>Modo predeterminado:
+        <select>
+          <option>Contado</option>
+          <option>Crédito</option>
+        </select>
+      </label><br />
+      <label><input type="checkbox" /> Mostrar precios con IVA incluido</label><br />
+      <label><input type="checkbox" checked /> Imprimir automáticamente</label>
+    </div>
+
+    <div class="card">
+      <h2>Sincronización</h2>
+      <label><input type="checkbox" /> Descargar al iniciar</label><br />
+      <label><input type="checkbox" /> Subir al cerrar</label>
+    </div>
+
+    <div class="card">
+      <h2>Otros</h2>
+      <p>Idioma: <strong>Español</strong></p>
+      <p>Versión: 1.0.1</p>
+      <button>📞 Contactar soporte</button><br />
+      <button style="background-color:#cc0000;color:white;">🗑️ Restaurar valores</button>
+    </div>
+  </main>
+
+  <div class="bottom-nav">
+    <a href="index.html"><i class="fas fa-home"></i><span>Inicio</span></a>
+    <a href="abono.html"><i class="fas fa-dollar-sign"></i><span>Abono</span></a>
+    <a href="factura.html"><i class="fas fa-file-invoice"></i><span>Factura</span></a>
+    <a href="parametros.html"><i class="fas fa-cog"></i><span>Parámetros</span></a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

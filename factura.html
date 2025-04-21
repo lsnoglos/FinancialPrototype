@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Factura</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+  <header>
+    <span class="hamburger"><i class="fas fa-bars"></i></span>
+    <h1>Factura</h1>
+  </header>
+
+  <nav class="drawer">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home icon"></i>Inicio</a></li>
+      <li><a href="descargar.html"><i class="fas fa-download icon"></i>Descargar</a></li>
+      <li><a href="subir.html"><i class="fas fa-upload icon"></i>Subir</a></li>
+      <li><a href="clientes.html"><i class="fas fa-user icon"></i>Clientes</a></li>
+      <li><a href="productos.html"><i class="fas fa-box icon"></i>Productos</a></li>
+      <li><a href="impresiones.html"><i class="fas fa-print icon"></i>Impresiones</a></li>
+      <li><a href="mas.html"><i class="fas fa-ellipsis-h icon"></i>Más</a></li>
+      <li><a href="login.html" onclick="alert('Salir')"><i class="fas fa-sign-out-alt icon"></i>Salir</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <form>
+      <label for="cliente">Cliente</label>
+      <select id="cliente" name="cliente" required>
+        <option value="">Seleccione un cliente</option>
+        <option value="cliente1">Cliente 1</option>
+        <option value="cliente2">Cliente 2</option>
+        <!-- Agregar más clientes según sea necesario -->
+      </select>
+
+      <label for="fecha">Fecha</label>
+      <input type="date" id="fecha" name="fecha" required />
+
+      <label for="producto">Producto/Servicio</label>
+      <input type="text" id="producto" name="producto" placeholder="Descripción del producto o servicio" required />
+
+      <label for="cantidad">Cantidad</label>
+      <input type="number" id="cantidad" name="cantidad" placeholder="Ingrese la cantidad" required />
+
+            <label for="precio">Precio Unitario</label>
+      <input type="number" id="precio" name="precio" placeholder="Ingrese el precio unitario" required />
+
+      <label for="metodo">Método de Pago</label>
+      <select id="metodo" name="metodo" required>
+        <option value="">Seleccione un método</option>
+        <option value="contado">Contado</option>
+        <option value="credito">Crédito</option>
+      </select>
+
+      <button type="submit">Generar Factura</button>
+    </form>
+  </main>
+
+  <div class="bottom-nav">
+    <a href="index.html"><i class="fas fa-home"></i><span>Inicio</span></a>
+    <a href="abono.html"><i class="fas fa-dollar-sign"></i><span>Abono</span></a>
+    <a href="factura.html"><i class="fas fa-file-invoice"></i><span>Factura</span></a>
+    <a href="parametros.html"><i class="fas fa-cog"></i><span>Parámetros</span></a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
